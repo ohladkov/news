@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Post from './Post';
 import axios from 'axios';
+import CONSTANTS from '../constants';
+import { serialize } from '../helpers';
 
 export default class Blog extends Component {
   constructor() {
@@ -16,8 +18,12 @@ export default class Blog extends Component {
       return this.setState({ posts: JSON.parse(localStorage.getItem('news')) });
     }
 
+    const query = serialize({
+      country: 'us'
+    });
+
     axios
-      .get(process.env.REACT_APP_NEWS_API_URL, { headers: { 'X-Api-Key': process.env.REACT_APP_NEWS_API_KEY } })
+      .get(`${CONSTANTS.NEWS_API_URLS.TOP}${query}`, { headers: {...CONSTANTS.NEWS_API_KEY_HEADER} })
       .then((data) => {
         this.setState({ posts: data.data.articles });
         localStorage.setItem('news', JSON.stringify(data.data.articles));
