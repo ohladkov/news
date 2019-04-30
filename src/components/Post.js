@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Post({ url, urlToImage, title, description }) {
+const Post = ({ url, urlToImage, title, description, onClick, viewed }) => {
   return (
-    <div className="post">
-      <a href={url} className="post__media">
+    <div className={`post ${viewed ? 'post--viewed' : ''}`} onClick={onClick} data-viewed="Viewed">
+      <a href={url} className="post__media" target="_blank" rel="noopener noreferrer">
         <img
           src={urlToImage}
           alt={description || 'Image description'}
@@ -12,10 +12,12 @@ export default function Post({ url, urlToImage, title, description }) {
       </a>
       <div className="post__text">
         <h2>
-          <a href={url}>{title}</a>
+          <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
         </h2>
         <p>{description || 'Post description'}</p>
       </div>
     </div>
   );
-}
+};
+
+export default Post;
