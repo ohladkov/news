@@ -1,8 +1,6 @@
 export const VIEW_POST = 'VIEW_POST';
 
-export const viewPost = (id) => {
-  return {
-    type: VIEW_POST,
-    id
-  }
-}
+export const viewPost = (id) => ({
+  type: VIEW_POST,
+  id,
+});

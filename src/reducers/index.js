@@ -91,6 +91,7 @@ const post = (state, action) => {
         ...state,
         viewed: true,
       };
+
     default:
       return state;
   }
@@ -100,6 +101,7 @@ const posts = (state = initialState, action) => {
   switch (action.type) {
     case 'VIEW_POST':
       return state.map((p) => post(p, action));
+
     default:
       return state;
   }
