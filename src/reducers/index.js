@@ -2,81 +2,154 @@ import { combineReducers } from 'redux';
 
 const initialState = [
   {
-    id: 0,
-    source: {
-      id: 'techradar',
-      name: 'TechRadar',
+    kind: 'blogger#post',
+    id: '7345193987064476834',
+    blog: {
+      id: '2399953',
     },
-    author: 'https://www.facebook.com/TechRadar',
-    title: 'The 18000mAh Energizer phone dies an undignified death after funding failure - TechRadar',
-    description: 'Good night, sweet prince.',
-    url: 'https://www.techradar.com/news/the-18000mah-energizer-phone-dies-an-undignified-death-after-funding-failure',
-    urlToImage: 'https://cdn.mos.cms.futurecdn.net/PDS53v8MABuBPvrKVuprdM-1200-80.jpg',
-    publishedAt: '2019-04-30T12:04:00Z',
-    content:
-      'The Energizer Power Max P18K Pop, an Energizer phone with a massive 18,000mAh battery, has finally finished ringing its death knell, after a wildly unsuccessful Indiegogo campaign saw it receive only 1% of the required funding.\r\nThe massive handset was shown … [+1344 chars]',
+    published: '2019-01-30T18:01:00-08:00',
+    updated: '2019-01-30T18:03:34-08:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNTQ4OTAwMjE0ODEwCm9mZnNldDogLTI4ODAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2019/01/an-update-on-google-and-blogger.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7345193987064476834',
+    title: 'An update on Google+ and Blogger',
+    author: {
+      id: '07192172642077960940',
+      displayName: 'A Googler',
+      url: 'https://www.blogger.com/profile/07192172642077960940',
+      image: {
+        url: '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7345193987064476834/comments',
+    },
   },
   {
-    id: 1,
-    source: {
-      id: 'the-hill',
-      name: 'The Hill',
+    kind: 'blogger#post',
+    id: '847065355310893195',
+    blog: {
+      id: '2399953',
     },
-    author: 'Reid Wilson',
-    title: "Abrams won't run for Senate seat | TheHill - The Hill",
-    description:
-      'Former Democratic state legislative leader Stacey Abrams will not challenge Sen. David Perdue (R-Ga.) next year, a blow to Democrats who hoped to make inroads in a state Republicans have controlled for nearly two decades.',
-    url: 'https://thehill.com/homenews/campaign/441288-abrams-wont-run-for-senate-seat',
-    urlToImage: 'https://thehill.com/sites/default/files/abramsstacey04102019.jpg',
-    publishedAt: '2019-04-30T11:57:03Z',
-    content:
-      'Former Democratic state legislative leader Stacey Abrams will not challenge Sen. David Perdue (R-Ga.) next year, a blow to Democrats who hoped to make inroads in a state Republicans have controlled for nearly two decades.\r\nIn a video posted to Twitter, Abrams… [+3006 chars]',
+    published: '2018-05-15T09:22:00-07:00',
+    updated: '2018-05-15T09:22:19-07:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNTI2NDAxMzM5NzEzCm9mZnNldDogLTI1MjAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2018/05/its-spring-cleaning-time-for-blogger.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/847065355310893195',
+    title: 'It’s spring cleaning time for Blogger',
+    author: {
+      id: '06022537168026948167',
+      displayName: 'Blogger',
+      url: 'https://www.blogger.com/profile/06022537168026948167',
+      image: {
+        url: '//4.bp.blogspot.com/-6RfTUjHlrJc/UbA13iUjSYI/AAAAAAAAABk/ot_-wjD-AQk/s28/blogger.jpg',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/847065355310893195/comments',
+    },
   },
   {
-    id: 2,
-    source: {
-      id: 'cnn',
-      name: 'CNN',
+    kind: 'blogger#post',
+    id: '2731320382187546485',
+    blog: {
+      id: '2399953',
     },
-    author: 'Nick Paton Walsh and Natalie Gallón, CNN',
-    title: "Venezuela opposition leader Juan Guaidó declares 'final phase of Operation Freedom' - CNN",
-    description:
-      'The leader of Venezuela\'s opposition, Juan Guaidó, on Tuesday declared "the start of the end of the usurpation," in a dawn address in which he was flanked by men in military fatigues and armored vehicles in the capital Caracas.',
-    url: 'https://www.cnn.com/2019/04/30/americas/venezuela-juan-guaido-leopoldo-lopez-intl/index.html',
-    urlToImage:
-      'https://cdn.cnn.com/cnnnext/dam/assets/190406135557-juan-guaido-manifestaciones-miraflores-tiembla-el-regimen-perdio-sots-00000000-super-tease.jpg',
-    publishedAt: '2019-04-30T11:40:00Z',
-    content: null,
+    published: '2017-03-20T17:34:00-07:00',
+    updated: '2017-03-20T17:34:06-07:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNDkwMDU2NDQ2MDY5Cm9mZnNldDogLTI1MjAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2017/03/share-your-unique-style-with-new.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/2731320382187546485',
+    title: 'Share your unique style with new Blogger themes',
+    author: {
+      id: '06022537168026948167',
+      displayName: 'Blogger',
+      url: 'https://www.blogger.com/profile/06022537168026948167',
+      image: {
+        url: '//4.bp.blogspot.com/-6RfTUjHlrJc/UbA13iUjSYI/AAAAAAAAABk/ot_-wjD-AQk/s28/blogger.jpg',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/2731320382187546485/comments',
+    },
   },
   {
-    id: 3,
-    source: {
-      id: 'cnn',
-      name: 'CNN',
+    kind: 'blogger#post',
+    id: '2481891409112513396',
+    blog: {
+      id: '2399953',
     },
-    author: 'Matt Egan, CNN Business',
-    title: "GE burns through $1.2 billion but Wall Street is happy it wasn't worse - CNN",
-    description:
-      'General Electric has fallen so hard that Wall Street is relieved its industrial businesses only burned $1.2 billion of cash during the first quarter.',
-    url: 'https://www.cnn.com/2019/04/30/investing/ge-earnings-stock/index.html',
-    urlToImage: 'https://cdn.cnn.com/cnnnext/dam/assets/190429160202-ge-earnings-file-restricted-super-tease.jpg',
-    publishedAt: '2019-04-30T11:37:00Z',
-    content: null,
+    published: '2016-11-22T18:24:00-08:00',
+    updated: '2016-11-22T18:39:37-08:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNDc5ODY4Nzc3OTQ0Cm9mZnNldDogLTI4ODAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2016/11/a-first-few-tweaks-toward-better-blogger_22.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/2481891409112513396',
+    title: 'A first few tweaks toward a better Blogger',
+    author: {
+      id: '07192172642077960940',
+      displayName: 'A Googler',
+      url: 'https://www.blogger.com/profile/07192172642077960940',
+      image: {
+        url: '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/2481891409112513396/comments',
+    },
   },
   {
-    id: 4,
-    source: {
-      id: 'cnbc',
-      name: 'CNBC',
+    kind: 'blogger#post',
+    id: '6241485945632143555',
+    blog: {
+      id: '2399953',
     },
-    author: 'Michael Sheetz',
-    title: "GE says Boeing's 737 Max is 'a new risk' to this year's earnings forecast - CNBC",
-    description: 'General Electric adds Boeing\'s grounded 737 Max airplanes as "a new risk" in its earnings report.',
-    url: 'https://www.cnbc.com/2019/04/30/general-electric-boeing-737-max-a-new-risk-to-2019-earnings.html',
-    urlToImage: 'https://image.cnbcfm.com/api/v1/image/105830301-1554291986205gettyimages-1130206930.jpeg?v=1556102410',
-    publishedAt: '2019-04-30T11:14:17Z',
-    content:
-      'General Electric added Boeing\'s grounded 737 Max airplanes as "a new risk" in its quarterly earnings report on Tuesday, citing production of engines for the planes and its ownership of several of the aircraft for its leasing business.\r\nGE said it is "working … [+1989 chars]',
+    published: '2016-05-24T16:36:00-07:00',
+    updated: '2016-07-10T18:40:27-07:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNDY4MjAxMjI3NjI3Cm9mZnNldDogLTI1MjAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2016/05/more-custom-template-flexibility.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/6241485945632143555',
+    title: 'More custom template flexibility',
+    author: {
+      id: '07192172642077960940',
+      displayName: 'A Googler',
+      url: 'https://www.blogger.com/profile/07192172642077960940',
+      image: {
+        url: '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/6241485945632143555/comments',
+    },
+  },
+  {
+    kind: 'blogger#post',
+    id: '4128093006481917913',
+    blog: {
+      id: '2399953',
+    },
+    published: '2016-05-06T10:56:00-07:00',
+    updated: '2016-05-06T10:56:21-07:00',
+    etag: '"iHf3yWDE_geBgZ8U7rgZ_xuTeAQ/dGltZXN0YW1wOiAxNDYyNTU3MzgxMTQ2Cm9mZnNldDogLTI1MjAwMDAwCg"',
+    url: 'http://blogger.googleblog.com/2016/05/keep-your-readers-interested-with.html',
+    selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/4128093006481917913',
+    title: 'Keep your readers interested with the AdSense Guide to Audience Engagement',
+    author: {
+      id: '15263398208175969722',
+      displayName: 'A Googler',
+      url: 'https://www.blogger.com/profile/15263398208175969722',
+      image: {
+        url: '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35',
+      },
+    },
+    replies: {
+      totalItems: '0',
+      selfLink: 'https://www.googleapis.com/blogger/v3/blogs/2399953/posts/4128093006481917913/comments',
+    },
   },
 ];
 
@@ -89,7 +162,7 @@ const post = (state, action) => {
 
       return {
         ...state,
-        viewed: true,
+        isViewed: true,
       };
 
     default:
