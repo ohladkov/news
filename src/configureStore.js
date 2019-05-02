@@ -12,7 +12,7 @@ const configureStore = () => {
   store.subscribe(
     throttle(() => {
       saveState({
-        posts: store.getState().posts
+        posts: store.getState().posts,
       });
     }, SAVE_STATE_TIMEOUT),
   );

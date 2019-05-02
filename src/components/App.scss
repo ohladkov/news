@@ -81,6 +81,32 @@
   }
 }
 
+.add-post {
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px 30px;
+  border-bottom: 1px solid rgba(#000, 0.2);
+
+  input[type="text"] {
+    min-width: 240px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid rgba(#000, 0.2);
+    border-radius: 2px;
+  }
+
+  button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    min-height: 40px;
+    border: 0;
+    border-radius: 2px;
+    background-color: lightcoral;
+    appearance: none;
+  }
+}
+
 img {
   max-width: 100%;
 }

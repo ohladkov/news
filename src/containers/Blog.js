@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import { viewPost } from '../actions';
+import { getAllPosts } from '../reducers';
 import PostsList from '../components/PostsList';
 
 const mapStateToProps = (state) => ({
-  posts: state.posts,
+  posts: getAllPosts(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
